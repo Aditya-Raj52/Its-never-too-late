@@ -10,85 +10,50 @@ class Solution {
             pow10[i] = (pow10[i - 1] * 10) % mod;
         }
 
-        // Count non-zero digits to size our arrays exactly
-        int count = 0;
-        for (int i = 0; i < n; i++) {
-            if (s.charAt(i) != '0') count++;
-        }
+        // 2. Build 1-indexed prefix arrays mapped to the original string
+        long[] prefSum = new long[n + 1];
+        long[] prefVal = new long[n + 1];
+        int[] count = new int[n + 1]; // Tracks how many non-zeros we've seen
 
-        // 2. Precompute indices and prefix arrays
-        int[] indices = new int[count];
-        long[] prefSum = new long[count + 1];
-        long[] prefVal = new long[count + 1];
-
-        int idx = 0;
         for (int i = 0; i < n; i++) {
             char c = s.charAt(i);
-            if (c != '0') {
-                int digit = c - '0';
-                indices[idx] = i;
-                prefSum[idx + 1] = prefSum[idx] + digit;
-                prefVal[idx + 1] = (prefVal[idx] * 10 + digit) % mod;
-                idx++;
+            int digit = c - '0';
+            
+            // Carry over previous state by default
+            prefSum[i + 1] = prefSum[i];
+            prefVal[i + 1] = prefVal[i];
+            count[i + 1] = count[i];
+
+            // If non-zero, update the current state
+            if (digit != 0) {
+                prefSum[i + 1] += digit;
+                prefVal[i + 1] = (prefVal[i] * 10 + digit) % mod;
+                count[i + 1]++;
             }
         }
 
-        // 3. Process Queries
+        // 3. Process Queries in O(1) time each
         int[] answer = new int[queries.length];
 
         for (int i = 0; i < queries.length; i++) {
             int L = queries[i][0];
             int R = queries[i][1];
 
-            // Find the start and end of non-zero digits in this range
-            int a = lowerBound(indices, L);
-            int b = upperBound(indices, R) - 1;
-
-            // If no non-zero digits are in the range [L, R]
-            if (a > b) {
+            // How many non-zero digits are in this substring?
+            int len = count[R + 1] - count[L];
+            
+            if (len == 0) {
                 answer[i] = 0;
                 continue;
             }
 
-            // Calculate Sum
-            long sum = prefSum[b + 1] - prefSum[a];
+            // O(1) lookups
+            long sum = prefSum[R + 1] - prefSum[L];
+            long x = (prefVal[R + 1] - (prefVal[L] * pow10[len]) % mod + mod) % mod;
 
-            // Calculate concatenated value x
-            int len = b - a + 1;
-            long x = (prefVal[b + 1] - (prefVal[a] * pow10[len]) % mod + mod) % mod;
-
-            // Store final modulo answer
             answer[i] = (int) ((x * sum) % mod);
         }
 
         return answer;
-    }
-
-    // Helper: Finds the first index where the value is >= target
-    private int lowerBound(int[] arr, int target) {
-        int left = 0, right = arr.length;
-        while (left < right) {
-            int mid = left + (right - left) / 2;
-            if (arr[mid] >= target) {
-                right = mid;
-            } else {
-                left = mid + 1;
-            }
-        }
-        return left;
-    }
-
-    // Helper: Finds the first index where the value is > target
-    private int upperBound(int[] arr, int target) {
-        int left = 0, right = arr.length;
-        while (left < right) {
-            int mid = left + (right - left) / 2;
-            if (arr[mid] > target) {
-                right = mid;
-            } else {
-                left = mid + 1;
-            }
-        }
-        return left;
     }
 }
