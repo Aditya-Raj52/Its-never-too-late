@@ -1,33 +1,31 @@
+import java.util.Arrays;
+
 class Solution {
     public int[] pathExistenceQueries(int n, int[] nums, int maxDiff, int[][] queries) {
-int[] temp = nums.clone();
-        Arrays.sort(temp);
+        // Step 1: Sort and deduplicate in place
+        int[] vals = nums.clone();
+        Arrays.sort(vals);
         int m = 0;
-        
-        // Remove duplicates in-place to get unique values
-        for (int i = 0; i < n; i++) {
-            if (i == 0 || temp[i] != temp[i - 1]) {
-                temp[m++] = temp[i];
+        for (int x : vals) {
+            if (m == 0 || vals[m - 1] != x) {
+                vals[m++] = x;
             }
         }
-        int[] uniqueVals = Arrays.copyOf(temp, m);
         
-        // Step 2: Compute the immediate next optimal jump for each unique value
+        // Step 2: O(N) Two-Pointer approach for the next optimal jump
         int[] nextHop = new int[m];
-        for (int i = 0; i < m; i++) {
-            int target = uniqueVals[i] + maxDiff;
-            // Find the largest element <= target
-            int idx = upperBound(uniqueVals, target) - 1;
-            nextHop[i] = idx;
+        int right = 0;
+        for (int left = 0; left < m; left++) {
+            while (right + 1 < m && vals[right + 1] - vals[left] <= maxDiff) {
+                right++;
+            }
+            nextHop[left] = right;
         }
         
         // Step 3: Build the Binary Lifting table
-        int LOG = 18; // Sufficient for n <= 10^5
+        int LOG = 18; 
         int[][] up = new int[LOG][m];
-        
-        for (int i = 0; i < m; i++) {
-            up[0][i] = nextHop[i];
-        }
+        up[0] = nextHop; // Directly reference the array for the 0th power to save time
         
         for (int k = 1; k < LOG; k++) {
             for (int i = 0; i < m; i++) {
@@ -35,7 +33,7 @@ int[] temp = nums.clone();
             }
         }
         
-        // Step 4: Process each query
+        // Step 4: Process queries using native binary search
         int[] ans = new int[queries.length];
         for (int q = 0; q < queries.length; q++) {
             int u = queries[q][0];
@@ -46,23 +44,17 @@ int[] temp = nums.clone();
                 continue;
             }
             
-            int valU = nums[u];
-            int valV = nums[v];
-            
+            int valU = nums[u], valV = nums[v];
             if (valU == valV) {
                 ans[q] = 1; // Distinct nodes with the same value form a clique
                 continue;
             }
             
-            // Ensure we always jump from the smaller value to the larger value
-            int lowVal = Math.min(valU, valV);
-            int highVal = Math.max(valU, valV);
+            // Native binary search works because we are guaranteed the values exist in `vals`
+            int curr = Arrays.binarySearch(vals, 0, m, Math.min(valU, valV));
+            int targetIdx = Arrays.binarySearch(vals, 0, m, Math.max(valU, valV));
             
-            // Get their corresponding indices in the unique sorted array
-            int curr = lowerBound(uniqueVals, lowVal);
-            int targetIdx = lowerBound(uniqueVals, highVal);
-            
-            // Check if target is reachable at all by simulating max possible jumps
+            // Check max reachability to see if a path exists at all
             int maxReachable = curr;
             for (int k = LOG - 1; k >= 0; k--) {
                 maxReachable = up[k][maxReachable];
@@ -73,7 +65,7 @@ int[] temp = nums.clone();
                 continue;
             }
             
-            // Use binary lifting to count the minimum steps required
+            // Jump efficiently using the lifting table
             int steps = 0;
             for (int k = LOG - 1; k >= 0; k--) {
                 if (up[k][curr] < targetIdx) {
@@ -82,38 +74,9 @@ int[] temp = nums.clone();
                 }
             }
             
-            // One more step is needed to cross or touch the targetIdx
             ans[q] = steps + 1;
         }
         
         return ans;
-    }
-    
-    // Helper method: Equivalent to Python's bisect_left
-    private int lowerBound(int[] arr, int target) {
-        int low = 0, high = arr.length;
-        while (low < high) {
-            int mid = low + (high - low) / 2;
-            if (arr[mid] >= target) {
-                high = mid;
-            } else {
-                low = mid + 1;
-            }
-        }
-        return low;
-    }
-
-    // Helper method: Equivalent to Python's bisect_right
-    private int upperBound(int[] arr, int target) {
-        int low = 0, high = arr.length;
-        while (low < high) {
-            int mid = low + (high - low) / 2;
-            if (arr[mid] > target) {
-                high = mid;
-            } else {
-                low = mid + 1;
-            }
-        }
-        return low;
     }
 }
