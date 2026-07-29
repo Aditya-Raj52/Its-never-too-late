@@ -49,6 +49,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0061-rotate-list](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0061-rotate-list/) | Medium |
 | [0141-linked-list-cycle](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0141-linked-list-cycle/) | Easy |
 | [0143-reorder-list](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0143-reorder-list/) | Medium |
 | [0234-palindrome-linked-list](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0234-palindrome-linked-list/) | Easy |
@@ -82,6 +83,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0061-rotate-list](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0061-rotate-list/) | Medium |
 | [0141-linked-list-cycle](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0141-linked-list-cycle/) | Easy |
 | [0143-reorder-list](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0143-reorder-list/) | Medium |
 | [0234-palindrome-linked-list](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0234-palindrome-linked-list/) | Easy |
