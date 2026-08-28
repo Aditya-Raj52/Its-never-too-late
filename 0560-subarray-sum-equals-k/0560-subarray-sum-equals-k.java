@@ -3,12 +3,9 @@ import java.util.Map;
 
 public class Solution {
     public int subarraySum(int[] nums, int k) {
-        // Track the total number of valid subarrays found
         int count = 0;
-        
         // Track the running total as we walk through the array
         int currentSum = 0;
-        
         // Key: A past running sum | Value: How many times we have seen that sum
         Map<Integer, Integer> seenSums = new HashMap<>();
         
