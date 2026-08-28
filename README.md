@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0060-permutation-sequence](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0060-permutation-sequence/) | Hard |
 | [2029-stone-game-ix](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/2029-stone-game-ix/) | Medium |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
 | [3345-smallest-divisible-digit-product-i](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3345-smallest-divisible-digit-product-i/) | Easy |
@@ -109,6 +110,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0060-permutation-sequence](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0060-permutation-sequence/) | Hard |
 | [0143-reorder-list](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0143-reorder-list/) | Medium |
 | [0234-palindrome-linked-list](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0234-palindrome-linked-list/) | Easy |
 ## Enumeration
