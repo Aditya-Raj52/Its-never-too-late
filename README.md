@@ -33,6 +33,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0179-largest-number](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0179-largest-number/) | Medium |
 | [0209-minimum-size-subarray-sum](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0215-kth-largest-element-in-an-array](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
+| [0493-reverse-pairs](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0493-reverse-pairs/) | Hard |
 | [0560-subarray-sum-equals-k](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0724-find-pivot-index](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0724-find-pivot-index/) | Easy |
 | [2029-stone-game-ix](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/2029-stone-game-ix/) | Medium |
@@ -50,6 +51,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0209-minimum-size-subarray-sum/) | Medium |
+| [0493-reverse-pairs](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0493-reverse-pairs/) | Hard |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3532-path-existence-queries-in-a-graph-i/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
 ## Union-Find
@@ -153,6 +155,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0169-majority-element](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0169-majority-element/) | Easy |
 | [0215-kth-largest-element-in-an-array](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
+| [0493-reverse-pairs](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0493-reverse-pairs/) | Hard |
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -169,4 +172,24 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0169-majority-element](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0169-majority-element/) | Easy |
+## Binary Indexed Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0493-reverse-pairs](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0493-reverse-pairs/) | Hard |
+## Segment Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0493-reverse-pairs](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0493-reverse-pairs/) | Hard |
+## Merge Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0493-reverse-pairs](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0493-reverse-pairs/) | Hard |
+## Ordered Set
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0493-reverse-pairs](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0493-reverse-pairs/) | Hard |
+## Treap
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0493-reverse-pairs](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0493-reverse-pairs/) | Hard |
 <!---LeetCode Topics End-->
