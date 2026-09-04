@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0060-permutation-sequence](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0060-permutation-sequence/) | Hard |
+| [0070-climbing-stairs](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0070-climbing-stairs/) | Easy |
 | [2029-stone-game-ix](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/2029-stone-game-ix/) | Medium |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
 | [3345-smallest-divisible-digit-product-i](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3345-smallest-divisible-digit-product-i/) | Easy |
@@ -82,6 +83,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0070-climbing-stairs](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0070-climbing-stairs/) | Easy |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
 ## Greedy
 | Problem Name | Difficulty |
@@ -196,4 +198,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0493-reverse-pairs](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0493-reverse-pairs/) | Hard |
+## Memoization
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0070-climbing-stairs](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0070-climbing-stairs/) | Easy |
 <!---LeetCode Topics End-->
