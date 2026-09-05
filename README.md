@@ -43,6 +43,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0560-subarray-sum-equals-k](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0724-find-pivot-index](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0724-find-pivot-index/) | Easy |
 | [1014-best-sightseeing-pair](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1014-best-sightseeing-pair/) | Medium |
+| [1035-uncrossed-lines](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1035-uncrossed-lines/) | Medium |
 | [2029-stone-game-ix](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/2029-stone-game-ix/) | Medium |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3532-path-existence-queries-in-a-graph-i/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
@@ -92,6 +93,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [1014-best-sightseeing-pair](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1014-best-sightseeing-pair/) | Medium |
+| [1035-uncrossed-lines](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1035-uncrossed-lines/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
 ## Greedy
 | Problem Name | Difficulty |
@@ -211,4 +213,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0070-climbing-stairs](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0070-climbing-stairs/) | Easy |
+## Longest Common Subsequence
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1035-uncrossed-lines](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1035-uncrossed-lines/) | Medium |
 <!---LeetCode Topics End-->
