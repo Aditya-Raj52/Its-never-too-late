@@ -44,6 +44,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0724-find-pivot-index](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0724-find-pivot-index/) | Easy |
 | [1014-best-sightseeing-pair](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1014-best-sightseeing-pair/) | Medium |
 | [1035-uncrossed-lines](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1035-uncrossed-lines/) | Medium |
+| [1921-eliminate-maximum-number-of-monsters](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1921-eliminate-maximum-number-of-monsters/) | Medium |
 | [2029-stone-game-ix](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/2029-stone-game-ix/) | Medium |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3532-path-existence-queries-in-a-graph-i/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
@@ -100,6 +101,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [0179-largest-number](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0179-largest-number/) | Medium |
+| [1921-eliminate-maximum-number-of-monsters](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1921-eliminate-maximum-number-of-monsters/) | Medium |
 | [2029-stone-game-ix](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/2029-stone-game-ix/) | Medium |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
@@ -113,6 +115,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0169-majority-element](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0169-majority-element/) | Easy |
 | [0179-largest-number](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0179-largest-number/) | Medium |
 | [0215-kth-largest-element-in-an-array](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
+| [1921-eliminate-maximum-number-of-monsters](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1921-eliminate-maximum-number-of-monsters/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
 ## Depth-First Search
 | Problem Name | Difficulty |
