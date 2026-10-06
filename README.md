@@ -120,10 +120,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0104-maximum-depth-of-binary-tree](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [2685-count-the-number-of-complete-components](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/2685-count-the-number-of-complete-components/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0104-maximum-depth-of-binary-tree](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [2685-count-the-number-of-complete-components](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/2685-count-the-number-of-complete-components/) | Medium |
 ## Linked List
 | Problem Name | Difficulty |
@@ -220,4 +222,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1035-uncrossed-lines](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1035-uncrossed-lines/) | Medium |
+## Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0104-maximum-depth-of-binary-tree](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
+## Binary Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0104-maximum-depth-of-binary-tree](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 <!---LeetCode Topics End-->
