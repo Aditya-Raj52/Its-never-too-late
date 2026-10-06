@@ -17,7 +17,7 @@ class Solution {
     private int maxDiameter = 0;
 
     public int diameterOfBinaryTree(TreeNode root) {
-        System.gc();
+        
         maxHeight(root);
         return maxDiameter;
     }
