@@ -237,6 +237,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0110-balanced-binary-tree](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0543-diameter-of-binary-tree](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0543-diameter-of-binary-tree/) | Easy |
+| [0700-search-in-a-binary-search-tree](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0700-search-in-a-binary-search-tree/) | Easy |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -245,6 +246,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0110-balanced-binary-tree](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0543-diameter-of-binary-tree](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0543-diameter-of-binary-tree/) | Easy |
+| [0700-search-in-a-binary-search-tree](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0700-search-in-a-binary-search-tree/) | Easy |
 ## DP on Trees
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -254,6 +256,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0098-validate-binary-search-tree](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0098-validate-binary-search-tree/) | Medium |
+| [0700-search-in-a-binary-search-tree](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0700-search-in-a-binary-search-tree/) | Easy |
 ## String Matching
 | Problem Name | Difficulty |
 | ------- | ------- |
