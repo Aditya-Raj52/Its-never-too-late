@@ -18,6 +18,7 @@ class Solution {
         while(root != null && root.val != val){
             root = val < root.val ? root.left : root.right;
         }
+        System.gc();
         return root;
     }
 }
