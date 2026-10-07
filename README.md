@@ -17,6 +17,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
 | [0179-largest-number](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0179-largest-number/) | Medium |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
 | [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii/) | Medium |
@@ -80,6 +81,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
 | [0061-rotate-list](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0061-rotate-list/) | Medium |
 | [0141-linked-list-cycle](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0141-linked-list-cycle/) | Easy |
 | [0143-reorder-list](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0143-reorder-list/) | Medium |
@@ -252,4 +254,20 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0098-validate-binary-search-tree](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0098-validate-binary-search-tree/) | Medium |
+## String Matching
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
+## Z Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
+## Knuth–Morris–Pratt Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
+## Boyer–Moore String-Search Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
 <!---LeetCode Topics End-->
