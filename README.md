@@ -39,6 +39,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0169-majority-element](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0169-majority-element/) | Easy |
 | [0179-largest-number](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0179-largest-number/) | Medium |
 | [0209-minimum-size-subarray-sum](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0209-minimum-size-subarray-sum/) | Medium |
+| [0213-house-robber-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0213-house-robber-ii/) | Medium |
 | [0215-kth-largest-element-in-an-array](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
 | [0493-reverse-pairs](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0493-reverse-pairs/) | Hard |
 | [0560-subarray-sum-equals-k](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0560-subarray-sum-equals-k/) | Medium |
@@ -96,6 +97,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
+| [0213-house-robber-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0213-house-robber-ii/) | Medium |
 | [1014-best-sightseeing-pair](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1014-best-sightseeing-pair/) | Medium |
 | [1035-uncrossed-lines](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1035-uncrossed-lines/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
