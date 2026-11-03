@@ -9,7 +9,7 @@ class Solution {
             }
             sum += num;
         }
-        
+        System.gc();
         return (maxVal * nums.length) - sum;
     }
 }
