@@ -2,43 +2,53 @@ import java.util.*;
 
 class Solution {
 
-    private static class Element implements Comparable<Element> {
-        long val;
-        int idx;
+    // Custom Multiset helper using TreeMap to handle duplicates efficiently
+    private static class FrequencyMap {
+        TreeMap<Integer, Integer> map = new TreeMap<>();
+        long sum = 0;
+        int size = 0;
 
-        Element(long val, int idx) {
-            this.val = val;
-            this.idx = idx;
+        void add(int val) {
+            map.merge(val, 1, Integer::sum);
+            sum += val;
+            size++;
         }
 
-        @Override
-        public int compareTo(Element other) {
-            if (this.val != other.val) {
-                return Long.compare(this.val, other.val);
+        void remove(int val) {
+            map.merge(val, -1, Integer::sum);
+            if (map.get(val) == 0) {
+                map.remove(val);
             }
-            return Integer.compare(this.idx, other.idx);
+            sum -= val;
+            size--;
+        }
+
+        boolean contains(int val) {
+            return map.containsKey(val);
+        }
+
+        int lastKey() {
+            return map.lastKey();
+        }
+
+        int firstKey() {
+            return map.firstKey();
         }
     }
 
-    private TreeSet<Element> lower;
-    private TreeSet<Element> upper;
-    private long lowerSum;
-    private long upperSum;
+    private FrequencyMap lower = new FrequencyMap();
+    private FrequencyMap upper = new FrequencyMap();
 
     private void balance() {
-        while (lower.size() < upper.size()) {
-            Element first = upper.first();
-            upper.remove(first);
-            upperSum -= first.val;
-            lower.add(first);
-            lowerSum += first.val;
+        while (lower.size < upper.size) {
+            int val = upper.firstKey();
+            upper.remove(val);
+            lower.add(val);
         }
-        while (lower.size() > upper.size() + 1) {
-            Element last = lower.last();
-            lower.remove(last);
-            lowerSum -= last.val;
-            upper.add(last);
-            upperSum += last.val;
+        while (lower.size > upper.size + 1) {
+            int val = lower.lastKey();
+            lower.remove(val);
+            upper.add(val);
         }
     }
 
@@ -47,37 +57,30 @@ class Solution {
         long[] minOps = new long[n - x + 1];
 
         // Reset state for each test case
-        lower = new TreeSet<>();
-        upper = new TreeSet<>();
-        lowerSum = 0;
-        upperSum = 0;
+        lower = new FrequencyMap();
+        upper = new FrequencyMap();
 
         for (int i = 0; i < n; i++) {
-            Element curr = new Element(nums[i], i);
-            if (lower.isEmpty() || curr.compareTo(lower.last()) <= 0) {
-                lower.add(curr);
-                lowerSum += curr.val;
+            if (lower.size == 0 || nums[i] <= lower.lastKey()) {
+                lower.add(nums[i]);
             } else {
-                upper.add(curr);
-                upperSum += curr.val;
+                upper.add(nums[i]);
             }
             balance();
 
             if (i >= x) {
-                Element out = new Element(nums[i - x], i - x);
+                int out = nums[i - x];
                 if (lower.contains(out)) {
                     lower.remove(out);
-                    lowerSum -= out.val;
                 } else {
                     upper.remove(out);
-                    upperSum -= out.val;
                 }
                 balance();
             }
 
             if (i >= x - 1) {
-                long median = lower.last().val;
-                long cost = (median * lower.size() - lowerSum) + (upperSum - median * upper.size());
+                long median = lower.lastKey();
+                long cost = (median * lower.size - lower.sum) + (upper.sum - median * upper.size);
                 minOps[i - x + 1] = cost;
             }
         }
@@ -89,7 +92,7 @@ class Solution {
 
     private long dp(int idx, int remK, int x, int n, long[] minOps, Long[][] memo) {
         if (remK == 0) return 0;
-        if (idx > n - x * remK) return (long) 1e18; // Infinity
+        if (idx > n - x * remK) return (long) 1e18; // Infinity representation
         if (memo[idx][remK] != null) return memo[idx][remK];
 
         // Choice 1: Skip index
