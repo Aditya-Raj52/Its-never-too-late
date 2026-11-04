@@ -1,106 +1,79 @@
-import java.util.*;
-
 class Solution {
-
-    // Custom Multiset helper using TreeMap to handle duplicates efficiently
-    private static class FrequencyMap {
-        TreeMap<Integer, Integer> map = new TreeMap<>();
-        long sum = 0;
-        int size = 0;
-
-        void add(int val) {
-            map.merge(val, 1, Integer::sum);
-            sum += val;
-            size++;
-        }
-
-        void remove(int val) {
-            map.merge(val, -1, Integer::sum);
-            if (map.get(val) == 0) {
-                map.remove(val);
-            }
-            sum -= val;
-            size--;
-        }
-
-        boolean contains(int val) {
-            return map.containsKey(val);
-        }
-
-        int lastKey() {
-            return map.lastKey();
-        }
-
-        int firstKey() {
-            return map.firstKey();
-        }
-    }
-
-    private FrequencyMap lower = new FrequencyMap();
-    private FrequencyMap upper = new FrequencyMap();
-
-    private void balance() {
-        while (lower.size < upper.size) {
-            int val = upper.firstKey();
-            upper.remove(val);
-            lower.add(val);
-        }
-        while (lower.size > upper.size + 1) {
-            int val = lower.lastKey();
-            lower.remove(val);
-            upper.add(val);
-        }
-    }
+    int size;
+    long[] cntTree;
+    long[] sumTree;
 
     public long minOperations(int[] nums, int x, int k) {
         int n = nums.length;
-        long[] minOps = new long[n - x + 1];
-
-        // Reset state for each test case
-        lower = new FrequencyMap();
-        upper = new FrequencyMap();
-
+        int[] sorted = nums.clone();
+        Arrays.sort(sorted);
+        int m = 0;
         for (int i = 0; i < n; i++) {
-            if (lower.size == 0 || nums[i] <= lower.lastKey()) {
-                lower.add(nums[i]);
-            } else {
-                upper.add(nums[i]);
-            }
-            balance();
-
-            if (i >= x) {
-                int out = nums[i - x];
-                if (lower.contains(out)) {
-                    lower.remove(out);
-                } else {
-                    upper.remove(out);
-                }
-                balance();
-            }
-
-            if (i >= x - 1) {
-                long median = lower.lastKey();
-                long cost = (median * lower.size - lower.sum) + (upper.sum - median * upper.size);
-                minOps[i - x + 1] = cost;
+            if (m == 0 || sorted[m - 1] != sorted[i]) {
+                sorted[m++] = sorted[i];
             }
         }
-
-        // DP with memoization
-        Long[][] memo = new Long[n + 1][k + 1];
-        return dp(0, k, x, n, minOps, memo);
+        int[] vals = Arrays.copyOf(sorted, m);
+        int[] rank = new int[n];
+        for (int i = 0; i < n; i++) {
+            rank[i] = Arrays.binarySearch(vals, nums[i]) + 1;
+        }
+        size = m;
+        cntTree = new long[m + 1];
+        sumTree = new long[m + 1];
+        int windows = n - x + 1;
+        long[] cost = new long[windows];
+        int half = (x + 1) / 2;
+        long total = 0;
+        for (int i = 0; i < n; i++) {
+            add(rank[i], 1, nums[i]);
+            total += nums[i];
+            if (i >= x) {
+                add(rank[i - x], -1, -nums[i - x]);
+                total -= nums[i - x];
+            }
+            if (i >= x - 1) {
+                int pos = 0;
+                long cntBelow = 0;
+                long sumBelow = 0;
+                int step = Integer.highestOneBit(m);
+                while (step > 0) {
+                    int nxt = pos + step;
+                    if (nxt <= m && cntBelow + cntTree[nxt] < half) {
+                        pos = nxt;
+                        cntBelow += cntTree[nxt];
+                        sumBelow += sumTree[nxt];
+                    }
+                    step >>= 1;
+                }
+                long med = vals[pos];
+                long leftCnt = half;
+                long leftSum = sumBelow + (half - cntBelow) * med;
+                long rightCnt = x - leftCnt;
+                long rightSum = total - leftSum;
+                cost[i - x + 1] = med * leftCnt - leftSum + rightSum - med * rightCnt;
+            }
+        }
+        long inf = Long.MAX_VALUE / 4;
+        long[] prev = new long[n + 1];
+        long[] cur = new long[n + 1];
+        for (int j = 1; j <= k; j++) {
+            Arrays.fill(cur, 0, n + 1, inf);
+            for (int i = j * x; i <= n; i++) {
+                long take = (j == 1 ? 0 : prev[i - x]) + cost[i - x];
+                cur[i] = Math.min(cur[i - 1], take);
+            }
+            long[] tmp = prev;
+            prev = cur;
+            cur = tmp;
+        }
+        return prev[n];
     }
 
-    private long dp(int idx, int remK, int x, int n, long[] minOps, Long[][] memo) {
-        if (remK == 0) return 0;
-        if (idx > n - x * remK) return (long) 1e18; // Infinity representation
-        if (memo[idx][remK] != null) return memo[idx][remK];
-
-        // Choice 1: Skip index
-        long res = dp(idx + 1, remK, x, n, minOps, memo);
-
-        // Choice 2: Pick window of size x starting at idx
-        res = Math.min(res, minOps[idx] + dp(idx + x, remK - 1, x, n, minOps, memo));
-
-        return memo[idx][remK] = res;
+    void add(int i, int c, long v) {
+        for (; i <= size; i += i & -i) {
+            cntTree[i] += c;
+            sumTree[i] += v;
+        }
     }
 }
