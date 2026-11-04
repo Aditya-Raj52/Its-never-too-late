@@ -12,6 +12,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2029-stone-game-ix](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/2029-stone-game-ix/) | Medium |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
 | [3345-smallest-divisible-digit-product-i](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3345-smallest-divisible-digit-product-i/) | Easy |
+| [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 | [3622-check-divisibility-by-digit-sum-and-product](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3622-check-divisibility-by-digit-sum-and-product/) | Easy |
 | [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3736-minimum-moves-to-equal-array-elements-iii/) | Easy |
 | [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii/) | Medium |
@@ -51,6 +52,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1035-uncrossed-lines](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1035-uncrossed-lines/) | Medium |
 | [1921-eliminate-maximum-number-of-monsters](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1921-eliminate-maximum-number-of-monsters/) | Medium |
 | [2029-stone-game-ix](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/2029-stone-game-ix/) | Medium |
+| [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3532-path-existence-queries-in-a-graph-i/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
 | [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3736-minimum-moves-to-equal-array-elements-iii/) | Easy |
@@ -64,6 +66,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0141-linked-list-cycle](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0141-linked-list-cycle/) | Easy |
 | [0169-majority-element](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0169-majority-element/) | Easy |
 | [0560-subarray-sum-equals-k](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0560-subarray-sum-equals-k/) | Medium |
+| [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3532-path-existence-queries-in-a-graph-i/) | Medium |
 ## Binary Search
 | Problem Name | Difficulty |
@@ -104,6 +107,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0213-house-robber-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0213-house-robber-ii/) | Medium |
 | [1014-best-sightseeing-pair](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1014-best-sightseeing-pair/) | Medium |
 | [1035-uncrossed-lines](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1035-uncrossed-lines/) | Medium |
+| [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
 ## Greedy
 | Problem Name | Difficulty |
@@ -196,6 +200,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
+| [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 ## Quickselect
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -204,6 +209,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0209-minimum-size-subarray-sum/) | Medium |
+| [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 ## Boyer–Moore Majority Vote Algorithm
 | Problem Name | Difficulty |
 | ------- | ------- |
