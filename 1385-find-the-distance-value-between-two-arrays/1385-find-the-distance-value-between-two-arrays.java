@@ -4,17 +4,16 @@ class Solution {
         
         for (int n : arr1) {
             boolean isValid = true;
-            for (int e : arr2) {
+            for (int e : arr2){
                 if (Math.abs(e - n) <= d) {
                     isValid = false;
-                    break; // Found an element within distance d, no need to check the rest
+                    break;
                 }
             }
             if (isValid) {
                 count++;
             }
         }
-        
         return count;
     }
 }
