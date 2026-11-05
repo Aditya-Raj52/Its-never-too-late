@@ -2,40 +2,36 @@ import java.util.Arrays;
 
 class Solution {
     public int findTheDistanceValue(int[] arr1, int[] arr2, int d) {
-        // Sort arr2 so we can perform binary search
+        // Sort arr2 to enable binary search
         Arrays.sort(arr2);
         int count = 0;
         
         for (int val : arr1) {
-            // Check if there is any element in arr2 within [val - d, val + d]
-            if (isValid(arr2, val, d)) {
+            int idx = Arrays.binarySearch(arr2, val);
+            
+            // If exact match is found, distance is 0, which is <= d (invalid)
+            if (idx >= 0) {
+                continue;
+            }
+            
+            // Convert negative return value to insertion point
+            int insertionPoint = -idx - 1;
+            boolean isValid = true;
+            
+            // Check the closest element greater than val
+            if (insertionPoint < arr2.length && arr2[insertionPoint] - val <= d) {
+                isValid = false;
+            }
+            // Check the closest element smaller than val
+            else if (insertionPoint > 0 && val - arr2[insertionPoint - 1] <= d) {
+                isValid = false;
+            }
+            
+            if (isValid) {
                 count++;
             }
         }
         
         return count;
-    }
-    
-    private boolean isValid(int[] arr, int target, int d) {
-        int left = 0;
-        int right = arr.length - 1;
-        
-        while (left <= right) {
-            int mid = left + (right - left) / 2;
-            
-            // If we find ANY element whose distance is <= d, this target is INVALID
-            if (Math.abs(arr[mid] - target) <= d) {
-                return false;
-            }
-            
-            if (arr[mid] < target) {
-                left = mid + 1;
-            } else {
-                right = mid - 1;
-            }
-        }
-        
-        // No element in arr2 was within distance d
-        return true; 
     }
 }
