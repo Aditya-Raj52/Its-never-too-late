@@ -1,16 +1,20 @@
 class Solution {
     public int findTheDistanceValue(int[] arr1, int[] arr2, int d) {
-           int c = 0;
-        for(int n : arr1){
-            if(isValid(n, arr2, d)) c++;
+        int count = 0;
+        
+        for (int n : arr1) {
+            boolean isValid = true;
+            for (int e : arr2) {
+                if (Math.abs(e - n) <= d) {
+                    isValid = false;
+                    break; // Found an element within distance d, no need to check the rest
+                }
+            }
+            if (isValid) {
+                count++;
+            }
         }
-        return c;
-    }
-    boolean isValid(int n, int[] arr, int d){
-        for(int e : arr){
-            if(Math.abs(e - n) <= d) return false;
-        }
-        return true;
-
+        
+        return count;
     }
 }
