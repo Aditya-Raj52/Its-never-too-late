@@ -2,20 +2,18 @@ import java.util.Arrays;
 
 class Solution {
     public int findTheDistanceValue(int[] arr1, int[] arr2, int d) {
-        Arrays.sort(arr1);
         Arrays.sort(arr2);
-        
         int count = 0;
-        int j = 0;
+        int n2 = arr2.length;
         
-        for (int i = 0; i < arr1.length; i++) {
-            // Skip all elements in arr2 that are too small (< arr1[i] - d)
-            while (j < arr2.length && arr2[j] < arr1[i] - d) {
-                j++;
+        for (int a : arr1) {
+            int idx = Arrays.binarySearch(arr2, a);
+            if (idx < 0) {
+                idx = -idx - 1;
             }
-            if (j < arr2.length && arr2[j] <= arr1[i] + d) {
-            } 
-            else {
+            
+            // Check adjacent elements
+            if ((idx == n2 || arr2[idx] - a > d) && (idx == 0 || a - arr2[idx - 1] > d)) {
                 count++;
             }
         }
