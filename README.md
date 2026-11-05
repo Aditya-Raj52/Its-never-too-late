@@ -50,6 +50,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0724-find-pivot-index](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0724-find-pivot-index/) | Easy |
 | [1014-best-sightseeing-pair](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1014-best-sightseeing-pair/) | Medium |
 | [1035-uncrossed-lines](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1035-uncrossed-lines/) | Medium |
+| [1385-find-the-distance-value-between-two-arrays](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1385-find-the-distance-value-between-two-arrays/) | Easy |
 | [1921-eliminate-maximum-number-of-monsters](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1921-eliminate-maximum-number-of-monsters/) | Medium |
 | [2029-stone-game-ix](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/2029-stone-game-ix/) | Medium |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
@@ -73,6 +74,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0493-reverse-pairs](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0493-reverse-pairs/) | Hard |
+| [1385-find-the-distance-value-between-two-arrays](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1385-find-the-distance-value-between-two-arrays/) | Easy |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3532-path-existence-queries-in-a-graph-i/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
 ## Union-Find
@@ -95,6 +97,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0143-reorder-list](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0143-reorder-list/) | Medium |
 | [0234-palindrome-linked-list](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0234-palindrome-linked-list/) | Easy |
 | [0876-middle-of-the-linked-list](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0876-middle-of-the-linked-list/) | Easy |
+| [1385-find-the-distance-value-between-two-arrays](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1385-find-the-distance-value-between-two-arrays/) | Easy |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/2095-delete-the-middle-node-of-a-linked-list/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
 ## Dynamic Programming
@@ -129,6 +132,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0179-largest-number](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0179-largest-number/) | Medium |
 | [0215-kth-largest-element-in-an-array](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0215-kth-largest-element-in-an-array/) | Medium |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
+| [1385-find-the-distance-value-between-two-arrays](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1385-find-the-distance-value-between-two-arrays/) | Easy |
 | [1921-eliminate-maximum-number-of-monsters](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1921-eliminate-maximum-number-of-monsters/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
 ## Depth-First Search
