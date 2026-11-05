@@ -13,11 +13,9 @@ class Solution {
             while (j < arr2.length && arr2[j] < arr1[i] - d) {
                 j++;
             }
-            // Check if the current arr2[j] falls within the invalid range [arr1[i] - d, arr1[i] + d]
             if (j < arr2.length && arr2[j] <= arr1[i] + d) {
-                // Within distance d, so it's invalid (do nothing)
-            } else {
-                // No element in arr2 violated the condition for this arr1[i]
+            } 
+            else {
                 count++;
             }
         }
