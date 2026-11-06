@@ -53,6 +53,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1385-find-the-distance-value-between-two-arrays/) | Easy |
 | [1921-eliminate-maximum-number-of-monsters](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1921-eliminate-maximum-number-of-monsters/) | Medium |
 | [2029-stone-game-ix](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/2029-stone-game-ix/) | Medium |
+| [2747-count-zero-request-servers](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/2747-count-zero-request-servers/) | Medium |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3532-path-existence-queries-in-a-graph-i/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
@@ -67,6 +68,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0141-linked-list-cycle](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0141-linked-list-cycle/) | Easy |
 | [0169-majority-element](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0169-majority-element/) | Easy |
 | [0560-subarray-sum-equals-k](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0560-subarray-sum-equals-k/) | Medium |
+| [2747-count-zero-request-servers](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/2747-count-zero-request-servers/) | Medium |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3532-path-existence-queries-in-a-graph-i/) | Medium |
 ## Binary Search
@@ -134,6 +136,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1385-find-the-distance-value-between-two-arrays/) | Easy |
 | [1921-eliminate-maximum-number-of-monsters](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/1921-eliminate-maximum-number-of-monsters/) | Medium |
+| [2747-count-zero-request-servers](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/2747-count-zero-request-servers/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
 ## Depth-First Search
 | Problem Name | Difficulty |
@@ -213,6 +216,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/0209-minimum-size-subarray-sum/) | Medium |
+| [2747-count-zero-request-servers](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/2747-count-zero-request-servers/) | Medium |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Aditya-Raj52/Its-never-too-late/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 ## Boyer–Moore Majority Vote Algorithm
 | Problem Name | Difficulty |
