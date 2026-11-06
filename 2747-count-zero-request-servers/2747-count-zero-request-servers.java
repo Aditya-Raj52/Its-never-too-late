@@ -1,62 +1,60 @@
-import java.util.*;
+import java.util.Arrays;
 
 class Solution {
     public int[] countServers(int n, int[][] logs, int x, int[] queries) {
-        int m = queries.length;
-        
-        // Store queries with their original indices
-        int[][] indexedQueries = new int[m][2];
-        for (int i = 0; i < m; i++) {
-            indexedQueries[i][0] = queries[i];
-            indexedQueries[i][1] = i;
+        int lLen = logs.length;
+        // Pack logs into a 1D long array: (time << 32) | serverId
+        long[] packedLogs = new long[lLen];
+        for (int i = 0; i < lLen; i++) {
+            packedLogs[i] = ((long) logs[i][1] << 32) | (logs[i][0] & 0xFFFFFFFFL);
         }
-        
-        // Sort queries by time ascending
-        Arrays.sort(indexedQueries, Comparator.comparingInt(a -> a[0]));
-        
-        // Sort logs by time ascending
-        Arrays.sort(logs, Comparator.comparingInt(a -> a[1]));
-        
+        Arrays.sort(packedLogs);
+
+        int m = queries.length;
+        // Pack queries similarly: (time << 32) | originalIndex
+        long[] packedQueries = new long[m];
+        for (int i = 0; i < m; i++) {
+            packedQueries[i] = ((long) queries[i] << 32) | i;
+        }
+        Arrays.sort(packedQueries);
+
         int[] ans = new int[m];
-        
-        // Use a frequency array instead of HashMap for O(1) lightning-fast updates
-        int[] serverCount = new int[n + 1];
-        int activeServers = 0; // Tracks how many servers have at least 1 request
+        int[] count = new int[n + 1];
+        int activeServers = 0;
         
         int left = 0, right = 0;
-        int numLogs = logs.length;
-        
-        for (int[] q : indexedQueries) {
-            int qTime = q[0];
-            int qIdx = q[1];
+
+        for (int i = 0; i < m; i++) {
+            long q = packedQueries[i];
+            int qTime = (int) (q >>> 32);
+            int qIdx = (int) q;
             
             int windowStart = qTime - x;
             int windowEnd = qTime;
-            
-            // Add logs falling within the window end
-            while (right < numLogs && logs[right][1] <= windowEnd) {
-                int sId = logs[right][0];
-                if (serverCount[sId] == 0) {
+
+            // Expand right pointer
+            while (right < lLen && (packedLogs[right] >>> 32) <= windowEnd) {
+                int sId = (int) packedLogs[right];
+                if (count[sId] == 0) {
                     activeServers++;
                 }
-                serverCount[sId]++;
+                count[sId]++;
                 right++;
             }
-            
-            // Remove logs falling outside the window start
-            while (left < numLogs && logs[left][1] < windowStart) {
-                int sId = logs[left][0];
-                serverCount[sId]--;
-                if (serverCount[sId] == 0) {
+
+            // Shrink left pointer
+            while (left < lLen && (packedLogs[left] >>> 32) < windowStart) {
+                int sId = (int) packedLogs[left];
+                count[sId]--;
+                if (count[sId] == 0) {
                     activeServers--;
                 }
                 left++;
             }
-            
-            // Zero request servers = Total servers - Active servers
+
             ans[qIdx] = n - activeServers;
         }
-        
+
         return ans;
     }
 }
