@@ -30,8 +30,7 @@ class Solution {
             
             int windowStart = qTime - x;
             int windowEnd = qTime;
-            
-            // Expand the right side of the window to include all logs <= windowEnd
+
             while (right < numLogs && logs[right][1] <= windowEnd) {
                 serverCount.put(logs[right][0], serverCount.getOrDefault(logs[right][0], 0) + 1);
                 right++;
